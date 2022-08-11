@@ -1,0 +1,36 @@
+/* import { px2rem } from '@/assets/global-style' */
+
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.App {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+}
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    /* margin: ${px2rem(2)}; */
+    background-color: #fff;
+}
+
+.content {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    height: calc(100vh -100px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background: #fff; 
+    padding-left: 0.25rem;
+    padding-top: 0.5rem;
+}
+.content::-webkit-scrollbar{ display:none}
