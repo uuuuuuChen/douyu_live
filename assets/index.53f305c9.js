@@ -1,4 +1,4 @@
-import{s as d,p as e,b as m,r as a,j as o,V as p,d as i,E as h,g}from"./index.8705e13a.js";const f=d.div`
+import{s as d,p as e,b as m,r as a,j as o,V as p,d as i,E as h,g}from"./index.1388a30a.js";const f=d.div`
     /* overflow: scroll; */
     .video-list {
         /* padding-left: 5px;
@@ -100,15 +100,15 @@ import{s as d,p as e,b as m,r as a,j as o,V as p,d as i,E as h,g}from"./index.87
             font-weight: 600;
         }
         .ListPage-contentTitle {
-            box-sizing: border-box;
-            padding-left: ${e(25)};
-            width: 100%;
-            height: ${e(42)};
-            line-height: ${e(42)};
-            font-size: ${e(12)};
-            color: #424242;
-            background: url(https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon_play_e54a507.png) 5px no-repeat;
-            background-size: ${e(15)} ${e(15)};
-        }
+        box-sizing: border-box;
+        padding-left: ${e(25)};
+        width: 100%;
+        height: ${e(42)};
+        line-height: ${e(42)};
+        font-size: ${e(12)};
+        color: #424242;
+        background: url(https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/icon_play_e54a507.png) 5px no-repeat;
+        background-size: ${e(15)} ${e(15)};
     }
-`,x=t=>{const{lollist:r,loading:n}=t;a.exports.useEffect(()=>{},[]);const l=()=>{window.scrollTo(0,0)},c=o("div",{className:"ListPage-contentTitle",children:"\u82F1\u96C4\u8054\u76DF"}),u=r.map(s=>o(p,{video:s,showStatistics:!0},s.rid+Math.random()*1e5));return o(f,{children:i("div",{className:"video-list clear",children:[n?"":c,n?o(h,{style:{padding:"64px 0"},imageStyle:{width:375},description:"\u6682\u65E0\u6570\u636E"}):u,i("div",{className:"HomeFooter",children:[i("div",{className:"HomeFooter-goTop",onClick:l,children:[o("i",{className:"HomeFooter-goTopIcon"}),o("span",{className:"HomeFooter-goTopText",children:"\u8FD4\u56DE\u9876\u90E8"})]}),i("div",{className:"HomeFooter-officialDescription",children:[o("p",{className:"HomeFooter-officialDescriptionText",children:"\u5BA2\u670D\u70ED\u7EBF\uFF1A027-87750710"}),o("p",{className:"HomeFooter-officialDescriptionText",children:"\u6B66\u6C49\u6597\u9C7C\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8"}),o("p",{className:"HomeFooter-officialDescriptionText",children:"\u6E56\u5317\u7701\u6B66\u6C49\u5E02\u4E1C\u6E56\u5F00\u53D1\u533A\u5149\u8C37\u8F6F\u4EF6\u56EDF4\u680B8\u697C"}),o("p",{className:"HomeFooter-officialDescriptionText",children:"\u7248\u6743\u6240\u6709 \xA9 www.douyu.com \u9102ICP\u590715011961\u53F7-1"})]}),o("a",{className:"DownloadBtn",children:"\u6253\u5F00\u6597\u9C7CApp\uFF0C\u770B\u66F4\u591A\u7CBE\u5F69\u5185\u5BB9"})]})]})})},F=t=>({lollist:t.homedata.lollist,loading:t.homedata.loading}),b=t=>({getHomeDataActionDispatch(){t(g())}}),H=m(F,b)(a.exports.memo(x));export{H as default};
+    }
+`,x=t=>{const{hotlist:r,loading:n}=t;a.exports.useEffect(()=>{},[]);const l=()=>{window.scrollTo(0,0)},c=o("div",{className:"ListPage-contentTitle",children:"\u70ED\u95E8\u6E38\u620F"}),u=r.map(s=>o(p,{video:s,showStatistics:!0},s.rid+Math.random()*1e5));return o(f,{children:i("div",{className:"video-list clear",children:[n?"":c,n?o(h,{style:{padding:"64px 0"},imageStyle:{width:375},description:"\u6682\u65E0\u6570\u636E"}):u,i("div",{className:"HomeFooter",children:[i("div",{className:"HomeFooter-goTop",onClick:l,children:[o("i",{className:"HomeFooter-goTopIcon"}),o("span",{className:"HomeFooter-goTopText",children:"\u8FD4\u56DE\u9876\u90E8"})]}),i("div",{className:"HomeFooter-officialDescription",children:[o("p",{className:"HomeFooter-officialDescriptionText",children:"\u5BA2\u670D\u70ED\u7EBF\uFF1A027-87750710"}),o("p",{className:"HomeFooter-officialDescriptionText",children:"\u6B66\u6C49\u6597\u9C7C\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8"}),o("p",{className:"HomeFooter-officialDescriptionText",children:"\u6E56\u5317\u7701\u6B66\u6C49\u5E02\u4E1C\u6E56\u5F00\u53D1\u533A\u5149\u8C37\u8F6F\u4EF6\u56EDF4\u680B8\u697C"}),o("p",{className:"HomeFooter-officialDescriptionText",children:"\u7248\u6743\u6240\u6709 \xA9 www.douyu.com \u9102ICP\u590715011961\u53F7-1"})]}),o("a",{className:"DownloadBtn",children:"\u6253\u5F00\u6597\u9C7CApp\uFF0C\u770B\u66F4\u591A\u7CBE\u5F69\u5185\u5BB9"})]})]})})},F=t=>({hotlist:t.homedata.hotlist,loading:t.homedata.loading}),b=t=>({getHomeDataActionDispatch(){t(g())}}),v=m(F,b)(a.exports.memo(x));export{v as default};
