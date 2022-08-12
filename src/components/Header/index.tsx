@@ -35,7 +35,12 @@ const Header: React.FC<HeaderProps> = (props) => {
     getListDataActionDispatch
   } = props
   // console.log(cate1Info,cate2Info)
-  // console.log(cate2Info.slice(0,100))
+  // console.log(cate2Info.slice(0,30))
+
+  const onMaskClick = () => {
+    setVisible(false)
+  }
+
   const PartitionsList = partitions.map((item) => {
     return (
       <NavLink to={item.shortName} key={item.cate2Id}>
@@ -54,17 +59,15 @@ const Header: React.FC<HeaderProps> = (props) => {
     return (
         <li className='main' key={item.cate2Id}>
           {/* <LazyLoad placeholder={<img width='100%' height='100%' src={videoImg}/>}> */}
+          <Link to={item. shortName} onClick={onMaskClick}>
           <div className='image'><img src={item.icon} alt="" /></div>
           {/* </LazyLoad> */}
           <div className='title'>{item.cate2Name}</div>
+          </Link>
         </li>
     )
       
   }) 
-
-  const onMaskClick = () => {
-    setVisible(false)
-  }
 
   const displayStyle = loading ? 'none' : ''
 

@@ -73,7 +73,7 @@ const WZ:React.FC<WZProps> = (props) => {
 }
 
 const mapStateToProps = (state: rootState) => ({
-  wzlist: state.homedata.lollist,
+  wzlist: state.homedata.wzlist,
   loading: state.homedata.loading
 })
 
