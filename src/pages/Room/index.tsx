@@ -5,12 +5,13 @@ import {
   getHomeDataAction,
   getAnchorAction
 } from '@/store/actionCreators'
+import videoImg from '@/assets/images/douyu.png'
 
 
 const Room = () => {
   return (
     <div>
-      
+      <img src={videoImg} alt="" />
     </div>
   )
 }
