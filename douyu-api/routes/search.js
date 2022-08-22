@@ -30,6 +30,10 @@ router.get('/result', async (ctx, next) => {
         const searchdata14 = await fetchLOLList(4)
         const searchdata15 = await fetchLOLList(2)
         const searchdata16 = await fetchLOLList(3)
+        const searchdata17 = await fetchLOLList(1)
+        const searchdata18 = await fetchLOLList(5)
+        const searchdata19 = await fetchWZList(1)
+        const searchdata20 = await fetchWZList(2)
         const data = [
             ...searchdata1.data.list,
             ...searchdata2.data.list,
@@ -47,6 +51,10 @@ router.get('/result', async (ctx, next) => {
             ...searchdata14.data.list,
             ...searchdata15.data.list,
             ...searchdata16.data.list,
+            ...searchdata17.data.list,
+            ...searchdata18.data.list,
+            ...searchdata19.data.list,
+            ...searchdata20.data.list,
             ...searchdata.data.list,
         ]
         // console.log(data)
